@@ -14,7 +14,7 @@ class ChangeNameToTitleInBooksTable extends Migration
     public function up()
     {
         Schema::table('books', function (Blueprint $table) {
-             $table->renameColumn('name','title');
+            // $table->renameColumn('name','title');
         });
     }
 
@@ -26,7 +26,7 @@ class ChangeNameToTitleInBooksTable extends Migration
     public function down()
     {
         Schema::table('books', function (Blueprint $table) {
-             $table->renameColumn('title','name');
+             //$table->renameColumn('title','name');
         });
     }
 }
